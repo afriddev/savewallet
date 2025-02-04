@@ -18,11 +18,12 @@ function Button({
   icon = undefined,
   iconClassName = "",
   startIcon = false,
+  onTrigger
 }: ButtonInterface) {
   return (
     <div className="w-fit">
       <button onClick={onTrigger}
-        className={` text-white px-4 h-8   flex items-center gap-2 cursor-pointer hover:scale-105 ${className} bg-black  `}
+        className={` text-white px-4 h-8  text-sm  flex items-center gap-2 cursor-pointer hover:scale-105 ${className} bg-black  `}
       >
         {icon && startIcon && (
           <GetIcon className={`${iconClassName}`} icon={icon} />
